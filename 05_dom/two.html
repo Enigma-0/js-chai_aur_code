@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM | CHAI AUR CODE</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+	<div class="parent">
+		<div class="day">Monday</div>
+		<!-- this is a comment, this will be counted in the childNodes functions -->
+		<div class="day">Tuesday</div>
+		<div class="day">Wednesday</div>
+		<div class="day">Thursday</div>
+		<div class="day">Friday</div>
+	</div>
+</body>
+
+<script>
+	const parent = document.querySelector('.parent')
+	// console.log(parent)
+	// console.log(parent.children)
+
+	for (let i = 0; i < parent.children.length; i++) {
+		const element = parent.children[i];
+		// console.log(element.innerHTML)
+	}
+
+	// console.log(parent.firstElementChild)
+	// console.log(parent.lastElementChild)
+
+	const day_one = document.querySelector('.day')
+
+	// console.log(day_one)
+	// console.log(day_one.parentElement)
+	// console.log(day_one.nextElementSibling)
+
+	console.log("NODES: ", parent.childNodes)
+
+</script>
+
+</html>
